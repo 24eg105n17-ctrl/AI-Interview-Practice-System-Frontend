@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My progress · Prepwise</title>
+    <link rel="stylesheet" href="/style.css">
+    <script src="/script.js" defer></script>
+</head>
+<body class="app-page" data-page="progress">
+<div class="app-shell">
+    <aside class="sidebar"><a class="brand" href="/dashboard.html"><span class="brand-mark">P</span><span>prepwise</span></a><span class="nav-caption">WORKSPACE</span><nav class="side-nav" aria-label="Main navigation"><a class="nav-link" href="/dashboard.html"><span class="nav-icon">⌂</span>Dashboard</a><a class="nav-link" href="/history.html"><span class="nav-icon">◷</span>Interview history</a><a class="nav-link active" href="/progress.html"><span class="nav-icon">↗</span>My progress</a><a class="nav-link" href="/profile.html"><span class="nav-icon">◎</span>My profile</a></nav><div class="sidebar-spacer"></div><div class="sidebar-tip"><span class="tip-sparkle">✳</span><strong>Your effort adds up.</strong><p>Keep practicing and give yourself credit for each step.</p></div><button class="nav-link logout-button" data-action="logout"><span class="nav-icon">↪</span>Log out</button><div class="sidebar-user" id="sidebar-user"></div></aside>
+    <main class="main-content"><header class="topbar"><span class="breadcrumb">Workspace <span>/</span> My progress</span><div class="topbar-right"><a class="avatar" href="/profile.html" data-avatar>?</a></div></header><section class="content-area"><div class="page-heading"><div><span class="eyebrow">YOUR GROWTH, AT A GLANCE</span><h1>My progress</h1><p class="muted">Small steps make a meaningful difference over time.</p></div></div>
+        <div class="stats-grid progress-stats"><article class="stat-card"><div class="stat-top"><span>Total interviews</span><span class="stat-icon peach">◷</span></div><strong data-stat="interviews">0</strong><span class="stat-foot">Sessions you’ve completed</span></article><article class="stat-card"><div class="stat-top"><span>Average score</span><span class="stat-icon lilac">✳</span></div><strong><span data-stat="average">—</span><small>/10</small></strong><span class="stat-foot">Across all your sessions</span></article><article class="stat-card"><div class="stat-top"><span>Best score</span><span class="stat-icon mint">↗</span></div><strong><span data-stat="best">—</span><small>/10</small></strong><span class="stat-foot">Your personal best</span></article><article class="stat-card"><div class="stat-top"><span>Questions answered</span><span class="stat-icon blush">✓</span></div><strong data-stat="questions">0</strong><span class="stat-foot">Practice makes progress</span></article></div>
+        <div class="progress-panels"><section class="panel-card"><div class="panel-heading"><div><span class="eyebrow">YOUR SCORE STORY</span><h2>Average score by session</h2></div><span class="chart-legend"><i></i>Score out of 10</span></div><div class="score-chart" id="score-chart"></div></section><section class="panel-card"><div class="panel-heading"><div><span class="eyebrow">A LITTLE BETTER EACH TIME</span><h2>Improvement</h2></div><span class="stat-icon mint">↗</span></div><div class="improvement-value"><strong id="improvement-value">—</strong><span>points change from first to latest session</span></div><p class="muted improvement-copy" id="improvement-copy">Complete a few interviews to see how your practice is adding up.</p></section></div>
+        <section class="panel-card topics-progress"><div class="panel-heading"><div><span class="eyebrow">WHERE YOU’VE PRACTICED</span><h2>Topics practiced</h2></div></div><div id="topic-progress-list"></div></section><footer class="page-footer">Your growth is worth celebrating <span>✳</span></footer></section></main>
+</div>
+</body>
+</html>

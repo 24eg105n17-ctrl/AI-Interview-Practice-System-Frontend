@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create account · Prepwise</title>
+    <link rel="stylesheet" href="/style.css">
+    <script src="/script.js" defer></script>
+</head>
+<body class="auth-page" data-page="register">
+<main class="auth-shell">
+    <section class="auth-art">
+        <a class="brand brand-light" href="/index.html"><span class="brand-mark">P</span><span>prepwise</span></a>
+        <div class="auth-art-copy">
+            <span class="eyebrow">A GOOD PLACE TO BEGIN</span>
+            <h1>Your potential,<br>with a plan.</h1>
+            <p>Make room to learn, practice, and find your interview voice.</p>
+            <div class="quote-card"><span class="quote-mark">“</span><p>Confidence grows when you give yourself the space to practice.</p><span class="quote-caption">One question at a time</span></div>
+        </div>
+        <div class="auth-art-orbit orbit-one"></div><div class="auth-art-orbit orbit-two"></div>
+        <span class="auth-footnote">A calmer way to prepare for what’s next.</span>
+    </section>
+    <section class="auth-form-wrap">
+        <form class="auth-form" id="register-form">
+            <span class="eyebrow">CREATE YOUR ACCOUNT</span>
+            <h2>Let’s get started</h2>
+            <p class="muted">A few details, then you’re on your way.</p>
+            <div class="form-message" id="form-message" role="alert" aria-live="polite"></div>
+            <label for="fullName">Full name</label>
+            <input id="fullName" name="fullName" autocomplete="name" maxlength="80" placeholder="Your name" required>
+            <label for="email">Email address</label>
+            <input id="email" name="email" type="email" autocomplete="email" placeholder="you@example.com" required>
+            <label for="password">Password <span class="label-hint">At least 8 characters</span></label>
+            <input id="password" name="password" type="password" autocomplete="new-password" minlength="8" placeholder="Create a password" required>
+            <label for="confirmPassword">Confirm password</label>
+            <input id="confirmPassword" name="confirmPassword" type="password" autocomplete="new-password" minlength="8" placeholder="Enter it again" required>
+            <button class="button button-primary button-wide" type="submit">Create account <span aria-hidden="true">→</span></button>
+            <p class="auth-switch">Already have an account? <a href="/index.html">Sign in</a></p>
+        </form>
+    </section>
+</main>
+</body>
+</html>

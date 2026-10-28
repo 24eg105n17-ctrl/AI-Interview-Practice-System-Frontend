@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice interview · Prepwise</title>
+    <link rel="stylesheet" href="/style.css">
+    <script src="/script.js" defer></script>
+</head>
+<body class="app-page" data-page="interview">
+<div class="app-shell">
+    <aside class="sidebar">
+        <a class="brand" href="/dashboard.html"><span class="brand-mark">P</span><span>prepwise</span></a>
+        <span class="nav-caption">WORKSPACE</span><nav class="side-nav" aria-label="Main navigation">
+            <a class="nav-link" href="/dashboard.html"><span class="nav-icon">⌂</span>Dashboard</a><a class="nav-link" href="/history.html"><span class="nav-icon">◷</span>Interview history</a><a class="nav-link" href="/progress.html"><span class="nav-icon">↗</span>My progress</a><a class="nav-link" href="/profile.html"><span class="nav-icon">◎</span>My profile</a>
+        </nav><div class="sidebar-spacer"></div><div class="sidebar-tip"><span class="tip-sparkle">✳</span><strong>You’ve got this.</strong><p>Take your time. This is a space to learn.</p></div><button class="nav-link logout-button" data-action="logout"><span class="nav-icon">↪</span>Log out</button><div class="sidebar-user" id="sidebar-user"></div>
+    </aside>
+    <main class="main-content">
+        <header class="topbar"><a class="breadcrumb breadcrumb-link" href="/dashboard.html">← Back to dashboard</a><div class="topbar-right"><span class="session-mode" id="session-mode">Getting ready…</span><a class="avatar" href="/profile.html" data-avatar>?</a></div></header>
+        <section class="content-area interview-area">
+            <div class="interview-heading"><span class="eyebrow">YOUR PRACTICE SESSION</span><h1 id="interview-topic">Interview practice</h1><p class="muted">There’s no rush. Take a moment to think through your answer.</p></div>
+            <div class="interview-layout">
+                <section class="question-card">
+                    <div class="question-meta"><span class="question-count" id="question-count">Question 1 of 10</span><span class="difficulty-pill">Intermediate</span></div>
+                    <div class="progress-track"><div class="progress-fill" id="question-progress"></div></div>
+                    <span class="eyebrow question-label">TAKE A MOMENT TO THINK</span>
+                    <h2 class="question-text" id="question-text">Preparing your first question…</h2>
+                    <form id="answer-form">
+                        <label for="answer">Your answer</label>
+                        <textarea id="answer" rows="8" maxlength="12000" placeholder="Share what you know. You can take your time." required></textarea>
+                        <div class="answer-foot"><span>Try to explain the idea in your own words.</span><span id="character-count">0 / 12000</span></div>
+                        <div class="form-message" id="interview-message" role="alert" aria-live="polite"></div>
+                        <button class="button button-primary" id="submit-answer" type="submit">Get feedback <span aria-hidden="true">→</span></button>
+                    </form>
+                    <section class="feedback-panel hidden" id="feedback-panel" aria-live="polite">
+                        <div class="feedback-score"><span class="feedback-score-icon">✳</span><div><span class="eyebrow">YOUR ANSWER SCORE</span><strong><span id="answer-score">0</span><small>/10</small></strong></div></div>
+                        <div class="feedback-grid"><article><span class="feedback-label">What worked</span><p id="feedback-strengths"></p></article><article><span class="feedback-label">Room to grow</span><p id="feedback-weaknesses"></p></article><article><span class="feedback-label">Try this next</span><p id="feedback-suggestions"></p></article><article><span class="feedback-label">A model answer</span><p id="feedback-model"></p></article></div>
+                        <button class="button button-primary" id="next-question" type="button">Next question <span aria-hidden="true">→</span></button>
+                    </section>
+                </section>
+                <aside class="session-aside"><div class="session-note"><span class="note-icon">✦</span><h3>A gentle reminder</h3><p>This is practice, not a test. Every answer gives you something new to build on.</p></div><div class="session-checklist"><span class="eyebrow">YOUR SESSION</span><div><span class="check-dot">✓</span><span>10 questions</span></div><div><span class="check-dot">✓</span><span>Personalized feedback</span></div><div><span class="check-dot">✓</span><span>Saved to your history</span></div></div></aside>
+            </div>
+            <footer class="page-footer">One answer at a time <span>✳</span></footer>
+        </section>
+    </main>
+</div>
+</body>
+</html>

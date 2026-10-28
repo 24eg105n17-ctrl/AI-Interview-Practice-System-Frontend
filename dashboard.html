@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard · Prepwise</title>
+    <link rel="stylesheet" href="/style.css">
+    <script src="/script.js" defer></script>
+</head>
+<body class="app-page" data-page="dashboard">
+<div class="app-shell">
+    <aside class="sidebar">
+        <a class="brand" href="/dashboard.html"><span class="brand-mark">P</span><span>prepwise</span></a>
+        <span class="nav-caption">WORKSPACE</span>
+        <nav class="side-nav" aria-label="Main navigation">
+            <a class="nav-link active" href="/dashboard.html"><span class="nav-icon">⌂</span>Dashboard</a>
+            <a class="nav-link" href="/history.html"><span class="nav-icon">◷</span>Interview history</a>
+            <a class="nav-link" href="/progress.html"><span class="nav-icon">↗</span>My progress</a>
+            <a class="nav-link" href="/profile.html"><span class="nav-icon">◎</span>My profile</a>
+        </nav>
+        <div class="sidebar-spacer"></div>
+        <div class="sidebar-tip"><span class="tip-sparkle">✳</span><strong>Small steps count.</strong><p>A little practice today can make a big difference tomorrow.</p></div>
+        <button class="nav-link logout-button" data-action="logout"><span class="nav-icon">↪</span>Log out</button>
+        <div class="sidebar-user" id="sidebar-user"></div>
+    </aside>
+    <main class="main-content">
+        <header class="topbar"><span class="breadcrumb">Workspace <span>/</span> Dashboard</span><div class="topbar-right"><span class="date-label" data-today></span><a class="avatar" href="/profile.html" data-avatar>?</a></div></header>
+        <section class="content-area">
+            <div class="welcome-row">
+                <div><span class="eyebrow">YOUR PRACTICE SPACE</span><h1>Practice smarter.<br class="mobile-break"> Interview better.</h1><p class="muted">A little preparation can change everything. Let’s make today count.</p></div>
+                <a class="button button-primary" href="#topics">Start an interview <span aria-hidden="true">→</span></a>
+            </div>
+            <div class="welcome-banner"><div class="banner-copy"><span class="banner-kicker">YOUR NEXT OPPORTUNITY IS CLOSER</span><h2>Ready when you are.</h2><p>Choose a topic, take a breath, and show yourself what you know.</p><a class="button button-light" href="#topics">Find your focus <span aria-hidden="true">↘</span></a></div><div class="banner-art" aria-hidden="true"><div class="banner-circle circle-a"></div><div class="banner-circle circle-b"></div><div class="banner-note">✦</div><div class="banner-label">one answer<br>at a time</div></div></div>
+            <div class="section-heading"><div><span class="eyebrow">YOUR MOMENTUM</span><h2>A snapshot of your progress</h2></div><a class="text-link" href="/progress.html">View progress <span>→</span></a></div>
+            <div class="stats-grid">
+                <article class="stat-card"><div class="stat-top"><span>Interviews completed</span><span class="stat-icon peach">◷</span></div><strong data-stat="interviews">0</strong><span class="stat-foot">Every session is a step forward</span></article>
+                <article class="stat-card"><div class="stat-top"><span>Average score</span><span class="stat-icon lilac">✳</span></div><strong><span data-stat="average">—</span><small>/10</small></strong><span class="stat-foot">Your overall practice score</span></article>
+                <article class="stat-card"><div class="stat-top"><span>Questions answered</span><span class="stat-icon mint">✓</span></div><strong data-stat="questions">0</strong><span class="stat-foot">Curiosity looks good on you</span></article>
+                <article class="stat-card"><div class="stat-top"><span>Best score</span><span class="stat-icon blush">↗</span></div><strong><span data-stat="best">—</span><small>/10</small></strong><span class="stat-foot">A new personal best is waiting</span></article>
+            </div>
+            <div class="section-heading topic-heading" id="topics"><div><span class="eyebrow">PICK UP A NEW SKILL</span><h2>Choose your interview topic</h2><p class="muted">Each practice session has 10 questions, at your pace.</p></div></div>
+            <div class="topics-grid">
+                <article class="topic-card"><span class="topic-icon java-icon">J</span><h3>Java</h3><p>Core concepts, OOP &amp; more</p><a class="topic-start" href="/interview.html?topic=Java">Start practice <span>→</span></a></article>
+                <article class="topic-card"><span class="topic-icon python-icon">Py</span><h3>Python</h3><p>Language fundamentals &amp; tools</p><a class="topic-start" href="/interview.html?topic=Python">Start practice <span>→</span></a></article>
+                <article class="topic-card"><span class="topic-icon sql-icon">▤</span><h3>SQL</h3><p>Queries, joins &amp; databases</p><a class="topic-start" href="/interview.html?topic=SQL">Start practice <span>→</span></a></article>
+                <article class="topic-card"><span class="topic-icon react-icon">⚛</span><h3>React</h3><p>Components, hooks &amp; UI</p><a class="topic-start" href="/interview.html?topic=React">Start practice <span>→</span></a></article>
+                <article class="topic-card"><span class="topic-icon spring-icon">✿</span><h3>Spring Boot</h3><p>Java apps, APIs &amp; services</p><a class="topic-start" href="/interview.html?topic=Spring%20Boot">Start practice <span>→</span></a></article>
+                <article class="topic-card"><span class="topic-icon js-icon">JS</span><h3>JavaScript</h3><p>Web fundamentals &amp; async</p><a class="topic-start" href="/interview.html?topic=JavaScript">Start practice <span>→</span></a></article>
+                <article class="topic-card"><span class="topic-icon html-icon">&lt;/&gt;</span><h3>HTML/CSS</h3><p>Structure, styling &amp; access</p><a class="topic-start" href="/interview.html?topic=HTML%2FCSS">Start practice <span>→</span></a></article>
+                <article class="topic-card"><span class="topic-icon dsa-icon">⌘</span><h3>Data Structures</h3><p>Algorithms &amp; problem solving</p><a class="topic-start" href="/interview.html?topic=Data%20Structures">Start practice <span>→</span></a></article>
+            </div>
+            <div class="section-heading recent-heading"><div><span class="eyebrow">LOOK HOW FAR YOU’VE COME</span><h2>Recent interviews</h2></div><a class="text-link" href="/history.html">See all <span>→</span></a></div>
+            <div class="table-card" id="recent-interviews"></div>
+            <footer class="page-footer">Made for your next big moment <span>✳</span></footer>
+        </section>
+    </main>
+</div>
+</body>
+</html>

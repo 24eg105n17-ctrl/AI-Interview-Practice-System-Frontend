@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your results · Prepwise</title>
+    <link rel="stylesheet" href="/style.css">
+    <script src="/script.js" defer></script>
+</head>
+<body class="app-page" data-page="result">
+<div class="app-shell">
+    <aside class="sidebar"><a class="brand" href="/dashboard.html"><span class="brand-mark">P</span><span>prepwise</span></a><span class="nav-caption">WORKSPACE</span><nav class="side-nav" aria-label="Main navigation"><a class="nav-link" href="/dashboard.html"><span class="nav-icon">⌂</span>Dashboard</a><a class="nav-link" href="/history.html"><span class="nav-icon">◷</span>Interview history</a><a class="nav-link" href="/progress.html"><span class="nav-icon">↗</span>My progress</a><a class="nav-link" href="/profile.html"><span class="nav-icon">◎</span>My profile</a></nav><div class="sidebar-spacer"></div><div class="sidebar-tip"><span class="tip-sparkle">✳</span><strong>Progress, not perfection.</strong><p>Every session is practice for the real thing.</p></div><button class="nav-link logout-button" data-action="logout"><span class="nav-icon">↪</span>Log out</button><div class="sidebar-user" id="sidebar-user"></div></aside>
+    <main class="main-content"><header class="topbar"><span class="breadcrumb">Workspace <span>/</span> Your results</span><div class="topbar-right"><a class="avatar" href="/profile.html" data-avatar>?</a></div></header>
+        <section class="content-area result-area"><div class="result-intro"><span class="eyebrow">SESSION COMPLETE</span><h1>You showed up. That matters.</h1><p class="muted">Take a moment to celebrate the work you put in. Every session is progress.</p></div>
+            <div class="result-hero"><div class="result-medallion"><span>YOUR<br>AVERAGE</span><strong><span id="result-average">0</span><small>/10</small></strong></div><div class="result-hero-copy"><span class="banner-kicker">A LITTLE MORE CONFIDENT THAN BEFORE</span><h2 id="performance-level">Every answer is a step forward.</h2><p>You completed <strong id="result-topic">your interview</strong> with <strong id="result-questions">10</strong> thoughtful answers.</p></div><span class="result-sparkle">✦</span></div>
+            <div class="stats-grid result-stats"><article class="stat-card"><div class="stat-top"><span>Total score</span><span class="stat-icon peach">✳</span></div><strong><span id="result-total">0</span><small>/100</small></strong><span class="stat-foot">A reflection of this session</span></article><article class="stat-card"><div class="stat-top"><span>Average score</span><span class="stat-icon lilac">↗</span></div><strong><span id="result-average-card">0</span><small>/10</small></strong><span class="stat-foot">Your session average</span></article><article class="stat-card"><div class="stat-top"><span>Questions answered</span><span class="stat-icon mint">✓</span></div><strong id="result-questions-card">10</strong><span class="stat-foot">You made the time to practice</span></article><article class="stat-card"><div class="stat-top"><span>Topic</span><span class="stat-icon blush">◎</span></div><strong class="result-topic-stat" id="result-topic-card">Java</strong><span class="stat-foot">A new skill in your toolkit</span></article></div>
+            <div class="result-feedback-grid"><article class="insight-card"><span class="insight-icon peach">✦</span><h3>Strengths to keep</h3><p id="result-strengths"></p></article><article class="insight-card"><span class="insight-icon lilac">↗</span><h3>Room to grow</h3><p id="result-weaknesses"></p></article><article class="insight-card"><span class="insight-icon mint">✳</span><h3>Your next step</h3><p id="result-suggestions"></p></article></div>
+            <div class="result-actions"><a class="button button-primary" id="practice-again" href="/dashboard.html">Practice again <span>→</span></a><a class="button button-secondary" href="/history.html">View history</a><a class="text-link" href="/dashboard.html">Back to dashboard</a></div><footer class="page-footer">Proud of you for practicing <span>✳</span></footer>
+        </section>
+    </main>
+</div>
+</body>
+</html>

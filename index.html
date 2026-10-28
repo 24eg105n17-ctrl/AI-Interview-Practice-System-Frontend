@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#f8f5f2">
+    <title>Sign in · Prepwise</title>
+    <link rel="stylesheet" href="/style.css">
+    <script src="/script.js" defer></script>
+</head>
+<body class="auth-page" data-page="login">
+<main class="auth-shell">
+    <section class="auth-art">
+        <a class="brand brand-light" href="/index.html"><span class="brand-mark">P</span><span>prepwise</span></a>
+        <div class="auth-art-copy">
+            <span class="eyebrow">YOUR NEXT CHAPTER STARTS HERE</span>
+            <h1>Show up ready<br>for anything.</h1>
+            <p>Build confidence one thoughtful practice session at a time.</p>
+            <div class="quote-card"><span class="quote-mark">“</span><p>It’s not about being perfect. It’s about being prepared to be your best.</p><span class="quote-caption">A little practice goes a long way</span></div>
+        </div>
+        <div class="auth-art-orbit orbit-one"></div><div class="auth-art-orbit orbit-two"></div>
+        <span class="auth-footnote">A calmer way to prepare for what’s next.</span>
+    </section>
+    <section class="auth-form-wrap">
+        <form class="auth-form" id="login-form">
+            <span class="eyebrow">WELCOME BACK</span>
+            <h2>Sign in to your space</h2>
+            <p class="muted">Your next great answer starts here.</p>
+            <div class="form-message" id="form-message" role="alert" aria-live="polite"></div>
+            <label for="email">Email address</label>
+            <input id="email" name="email" type="email" autocomplete="email" placeholder="you@example.com" required>
+            <label for="password">Password</label>
+            <input id="password" name="password" type="password" autocomplete="current-password" placeholder="Enter your password" required>
+            <button class="button button-primary button-wide" type="submit">Sign in <span aria-hidden="true">→</span></button>
+            <p class="auth-switch">New to Prepwise? <a href="/register.html">Create an account</a></p>
+            <p class="fine-print">Your practice history stays on this device.</p>
+        </form>
+    </section>
+</main>
+</body>
+</html>
