@@ -7,9 +7,7 @@ const STORAGE_KEYS = {
 };
 const TOPICS = ['Java', 'Python', 'SQL', 'React', 'Spring Boot', 'JavaScript', 'HTML/CSS', 'Data Structures'];
 const QUESTION_TOTAL = 10;
-const API_BASE_URL = window.location.hostname === 'ai-interview-practice-system-backen.vercel.app'
-    ? 'https://ai-interview-practice-system-backend-6.onrender.com'
-    : '';
+const API_BASE_URL = 'https://ai-interview-practice-system-backend-11.onrender.com';
 
 function readStorage(key, fallback) {
     try {
